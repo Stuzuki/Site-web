@@ -1,64 +1,109 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dossiers</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Dossier - Personne</title>
+
+  <style>
+    body {
+      background:#111;
+      color:white;
+      font-family:Arial;
+      padding:20px;
+    }
+
+    .card {
+      background:#222;
+      padding:20px;
+      margin-bottom:15px;
+      border-radius:12px;
+    }
+
+    .row {
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+
+    /* --- PHOTO PERSONNE RONDE --- */
+    .photo-personne {
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      overflow:hidden;
+      border:3px solid #fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .photo-personne img {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    h1 {
+      font-size:26px;
+      margin-bottom:20px;
+    }
+
+    .affaires-box {
+      background:#1a1a1a;
+      padding:15px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    .affaire {
+      background:#333;
+      padding:10px;
+      border-radius:8px;
+      margin-bottom:10px;
+      cursor:pointer;
+    }
+
+    .affaire:hover {
+      background:#444;
+    }
+  </style>
 </head>
 
 <body>
 
-    <div class="header">
-        <img src="images/logo.png" class="logo" alt="Logo">
-        <h1>Dossiers • Dosson et partener</h1>
+<h1>Dossier de : Clémence Perez</h1>
+
+<div class="card">
+  <div class="row">
+    
+    <!-- Photo ronde -->
+    <div class="photo-personne">
+      <img src="images/perez.jpg" alt="Clémence Perez">
     </div>
 
-    <div class="personne">
-        <img src="image.png" class="photo-personne">
-
-        <div class="infos">
-            <h2>Clémence Perez</h2>
-
-            <div class="affaires">
-
-                <!-- AFFAIRE 1 -->
-                <div class="affaire">
-                    <img src="avatars-bZBYvd8bz35jjyUX-xW8GLQ-t1080x1080.jpg" alt="">
-                    <a href="https://discord.com/channels/1022981300275126273/1419387741287878779" target="_blank">
-                        Weazel
-                    </a>
-                </div>
-
-                <!-- AFFAIRE 2 -->
-                <div class="affaire">
-                    <img src="images/affaire3.png" alt="">
-                    <a href="https://discord.com/channels/1022981300275126273/SALON_ID" target="_blank">
-                        Dossier Vol de véhicule
-                    </a>
-                </div>
-
-                <!-- AFFAIRE 3 (exemple supplémentaire) -->
-                <div class="affaire">
-                    <img src="images/affaire3.png" alt="">
-                    <a href="https://discord.com/channels/1022981300275126273/SALON_ID" target="_blank">
-                        Plainte civile
-                    </a>
-                </div>
-
-                <div class="affaire">
-                    <img src="images/affaire4.png" alt="">
-    <a href="https://discord.com/channels/1022981300275126273/SALON_ID" target="_blank" class="btn">
-        Affaire 4 - meurtre
-    </a>
+    <div>
+      <div style="font-size:22px; font-weight:bold;">Clémence Perez</div>
+      <div>Âge : 27 ans</div>
+      <div>Profession : Journaliste</div>
+    </div>
+  </div>
 </div>
 
-            </div>
-        </div>
-    </div>
+<h2>Ses affaires</h2>
+
+<div class="affaires-box">
+
+  <!-- Affaire 1 -->
+  <div class="affaire" onclick="window.location.href='https://discord.com/channels/TON_ID_SERVEUR/ID_DU_SALON'">
+    Agression - 12/01/2025
+  </div>
+
+  <!-- Affaire 2 -->
+  <div class="affaire" onclick="window.location.href='https://discord.com/channels/TON_ID_SERVEUR/ID_DU_SALON'">
+    Garde à vue - 24/02/2025
+  </div>
+
+</div>
+
 </body>
 </html>
-
-
-
-
